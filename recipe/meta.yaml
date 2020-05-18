@@ -2,16 +2,16 @@
 {% set version = "1.3.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: fe73e84e26567685fc9c0875c9270bc8f58ee9e3ec8fd039bfa52368a0c373e5
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -55,14 +55,14 @@ test:
     - pymove.visualization
 
 about:
-  home: "https://github.com/InsightLab/PyMove"
+  home: https://github.com/InsightLab/PyMove
   license: MIT
   license_family: MIT
   # https://github.com/InsightLab/PyMove/pull/66
   license_file: LICENSE.txt
-  summary: "A lib python to processing and visualization of trajectories and other spatial-temporal data"
-  doc_url: 
-  dev_url: 
+  summary: A lib python to processing and visualization of trajectories and other spatial-temporal data
+  doc_url:
+  dev_url:
 
 extra:
   recipe-maintainers:
