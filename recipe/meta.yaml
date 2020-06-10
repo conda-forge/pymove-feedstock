@@ -1,5 +1,5 @@
 {% set name = "pymove" %}
-{% set version = "1.3.6" %}
+{% set version = "1.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6730a2a58114418e0be6e3b362d80c45c29bac729c9cf494a4815f833c9d2b8e
+  sha256: ed7944e6c060a53790e34ae88b90f465c31b2c3a8dcf8edecd3521f732e8c249
 
 build:
   number: 0
