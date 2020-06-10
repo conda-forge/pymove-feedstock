@@ -45,6 +45,8 @@ test:
   requires:
     - pytest
   commands:
+    - pg_config
+    - psql -c 'create database travis_ci_test;' -U postgres
     - pytest --pyargs pymove
 
 about:
