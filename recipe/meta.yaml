@@ -45,7 +45,7 @@ test:
   requires:
     - pytest
   commands:
-    - createdb 'travis_ci_test' -U postgres
+    - postgres --help
     - pytest --pyargs pymove
 
 about:
