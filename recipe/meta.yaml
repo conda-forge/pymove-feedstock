@@ -44,11 +44,8 @@ requirements:
 test:
   requires:
     - pytest
-    - postgresql
   commands:
-    - systemctl start postgresql
-    - createdb 'travis_ci_test' -U postgres -w
-    - pytest --pyargs pymove
+    - pytest --pyargs pymove -k 'not test_utils_db'
 
 about:
   home: https://github.com/InsightLab/PyMove
