@@ -46,6 +46,7 @@ test:
     - pytest
     - postgresql
   commands:
+    - systemctl start postgresql
     - createdb 'travis_ci_test' -U postgres -w
     - pytest --pyargs pymove
 
