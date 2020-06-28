@@ -44,10 +44,10 @@ requirements:
 test:
   requires:
     - pytest
-    - postgresql
-    - mongodb
+    # - postgresql
+    # - mongodb
   commands:
-    - pytest --pyargs pymove
+    - pytest --pyargs pymove -k 'not test_utils_db'
 
 about:
   home: https://github.com/InsightLab/PyMove
