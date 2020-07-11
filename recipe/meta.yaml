@@ -1,5 +1,5 @@
 {% set name = "pymove" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 268ca0315bc1571350d9ee69078536e276467b58e3e57a6a46aed55675107d5e
+  sha256: 1e43b88a5d93e631a193e05a0f42fa48d094bbc6cf7621f4cab4b477e847c33d
 
 build:
   number: 0
@@ -44,6 +44,7 @@ requirements:
 test:
   requires:
     - pytest
+    - geopandas
     # - postgresql
     # - mongodb
   commands:
