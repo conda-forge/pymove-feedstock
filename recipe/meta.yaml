@@ -22,6 +22,7 @@ requirements:
     - branca
     - dask
     - folium >=0.10.1
+    - geohash2
     - geojson
     - holidays
     - ipython
@@ -30,12 +31,12 @@ requirements:
     - matplotlib-base
     - mplleaflet
     - numpy
-    - pandas
+    - pandas <=1.0.5
     - psutil
     - psycopg2
     - pymongo
     - python >=3.6
-    - pytz ==2019.3
+    - pytz
     - scikit-learn
     - scipy
     - shapely
