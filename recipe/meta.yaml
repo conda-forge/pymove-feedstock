@@ -33,8 +33,6 @@ requirements:
     - numpy
     - pandas <=1.0.5
     - psutil
-    - psycopg2
-    - pymongo
     - python >=3.6
     - pytz
     - scikit-learn
@@ -46,10 +44,8 @@ test:
   requires:
     - pytest
     - geopandas
-    # - postgresql
-    # - mongodb
   commands:
-    - pytest --pyargs pymove -k 'not test_utils_db'
+    - pytest --pyargs pymove
 
 about:
   home: https://github.com/InsightLab/PyMove
@@ -57,7 +53,7 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: A lib python to processing and visualization of trajectories and other spatial-temporal data
-  doc_url:
+  doc_url: https://pymove.readthedocs.io/en/latest/
   dev_url:
 
 extra:
