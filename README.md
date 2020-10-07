@@ -5,11 +5,11 @@ Home: https://github.com/InsightLab/PyMove
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymove-feedstock/blob/master/LICENSE.txt)
 
 Summary: A lib python to processing and visualization of trajectories and other spatial-temporal data
 
-
+Documentation: https://pymove.readthedocs.io/en/latest/
 
 Current build status
 ====================
