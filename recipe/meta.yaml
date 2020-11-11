@@ -1,5 +1,5 @@
 {% set name = "pymove" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1e9cfb2c5befc1c46d16b79ff7efb9e8f429ed48e83e1e93807ace2bef03586
+  sha256: 944fc4d113938c06240d6dd5c12a8f090e86700ca45673aedce062963721e816
 
 build:
   number: 0
