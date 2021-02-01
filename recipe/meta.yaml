@@ -1,5 +1,5 @@
 {% set name = "pymove" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a79585eb94e9768158b0164ad4d9d1afbc5ee3da19415c68bb84dead155c6f4c
+  sha256: e5e7036914138e5be84f0758b7489c9a2b1cb647f6b3f4802ec3352063510978
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - matplotlib-base
     - mplleaflet
     - numpy
-    - pandas <=1.0.5
+    - pandas >=1.1.0
     - psutil
     - python >=3.6
     - python-dateutil
