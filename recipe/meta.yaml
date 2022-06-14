@@ -1,5 +1,5 @@
 {% set name = "pymove" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7afcf1b7b78ac1c19131889012f290eabf7cc5be755dc77123bb6bdef7fbea35
+  sha256: a773b9c5017afd4f1db69691dc699a77d97ef0281540004c5dcfee2e1818360c
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - branca
     - dask
@@ -30,10 +30,11 @@ requirements:
     - joblib
     - matplotlib-base
     - mplleaflet
+    - networkx
     - numpy
-    - pandas >=1.1.0
+    - pandas >=1.1.0,<1.4.0
     - psutil
-    - python >=3.6
+    - python >=3.7
     - python-dateutil
     - pytz
     - scikit-learn
