@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a773b9c5017afd4f1db69691dc699a77d97ef0281540004c5dcfee2e1818360c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - branca
     - dask
@@ -34,7 +34,7 @@ requirements:
     - numpy
     - pandas >=1.1.0,<1.4.0
     - psutil
-    - python >=3.7
+    - python >={{ python_min }}
     - python-dateutil
     - pytz
     - scikit-learn
@@ -46,6 +46,7 @@ test:
   requires:
     - pytest
     - geopandas
+    - python {{ python_min }}
   commands:
     - pytest --pyargs pymove
 
